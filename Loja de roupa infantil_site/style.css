@@ -1,0 +1,249 @@
+  body{
+      margin: 0px;
+      color: #40514e;
+      text-align: center;
+      font-family: 'Merriweather', serif;
+  }
+       /* MENU */
+       .menu{
+           position: relative;
+           margin: 0px;
+           background-color: #e4f9f5;
+       }
+       .menu-ul img{
+           width: 100px;
+           height: 100px;
+           right: 350px;
+           border-radius: 4px;
+           margin-top: 10px;
+           display: inline-block;
+           position: relative;
+
+       }
+       .menu-ul{
+        margin: 0 auto;
+        background-color: #e4f9f5;
+
+    }
+       .menu li{
+        display: inline-block;
+        position: relative;
+        padding: 20px;
+        left: 200px;
+        background-color: #e4f9f5;
+        bottom: 50px;
+
+    }
+    .menu a{
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+    .menu a:hover{
+        color: rgb(146, 143, 143);
+    }
+
+  h1{
+      margin: 0px;
+      font-size: 4.5rem;
+      font-family: 'Sacramento', cursive;
+  }
+  h1:hover{
+      color: grey;
+  }
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+.main{
+    font-family: 2.5rem;
+}
+
+  .main{
+      background-color: #e4f9f5;
+      margin:  0 auto;
+      padding: 100px;
+      }
+
+.pro{
+    text-decoration: underline;
+}
+#bottom-cloud{
+ position: absolute;
+ right: 400px;
+ top: 100px;
+}
+#top-cloud{
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+}
+
+.apresentation p{
+    position: relative;
+    width: 800px;
+    left: 300px;
+
+}
+.apresentation{
+    margin-bottom: 60px;
+}
+
+/*CARDS*/
+.promo{
+    margin-top: 90px;
+}
+
+.card{
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 30px;
+}
+
+.card-promo h2 {
+    position: relative;
+    bottom: 20px;
+    padding: 0px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.card-promo img{
+    width: 200px;
+    height: 200px;
+}
+.card-promo img{
+    transition: transform .2s; /* Animation */
+  
+}
+.card-promo img:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.body-promo{
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+
+}
+.body-promo span{
+    position: absolute;
+    /* top | right | bottom | left */
+    margin: 2px;
+    left: 30px;
+    bottom: 5px;
+}
+.body-promo p{
+    font-size: 0.7em;
+    color: grey;
+    text-align: left;
+}
+.body-promo button{
+    display: inline-block;
+    position: absolute;
+    /* top | right | bottom | left */
+    margin: 2px;
+    right: 30px;
+    bottom: 5px;
+    padding: 5px;
+    color: #e4f9f5;
+    border: 1px solid black;
+    background-color:rgb(5, 106, 153);
+}
+#middle-section{
+    margin-bottom: 40px;
+}
+
+.body-promo button:hover{
+    background-color: mediumblue;
+    color: mintcream;
+}
+ 
+.card-ad-geral{
+    position: relative;
+    background-color: #e4f9f5;
+    margin: 0;
+    padding: 20px;
+}
+.card-ad-geral h2{
+    position: relative;
+    background-color: #e4f9f5;
+    padding: 30px;
+    margin: 0;
+}
+
+.card-ad{
+    display: inline-block;
+    width: 300px;
+    border-left: 1px solid;
+    padding: 30px;
+}
+.hr-section{
+    border: dotted 6px #a6adac;
+    border-bottom: none;
+    width: 4%;
+   margin: auto;
+}
+
+h3{
+    font-weight: bold;
+    
+}
+
+
+.card-ad a{
+    text-decoration: underline;
+    color: grey;
+ 
+}
+.card-ad a:hover{
+    color:black;
+}
+
+#cardh2{
+    font-weight: bold;
+    font-size: 1.7em;
+}
+
+.card-title p{
+    font-family: Helvetica, Arial,  sans-serif;
+    text-align: left; 
+    line-height: 2;
+}
+a{
+    text-decoration: black;
+    color: black;
+    font-weight: bold; 
+}
+a:hover{
+    color:blue;
+}
+
+.test{
+    display: inline-block;
+}
+.test img{
+    width: 200px;
+    float: right;
+    margin: 20px;
+}
+.test p{
+    width: 700px;
+    text-align: right;
+    line-height: 2; /*espaço entre as linhas*/
+    margin-top: 50px;
+}
+.test2{
+    display: inline-block;
+}
+.test2 img{
+    width: 200px;
+    border-radius: 100%;
+    float: left;
+    margin: 20px;
+}
+.test2 p{
+    width: 700px;
+    text-align: left;
+    line-height: 2; /*espaço entre as linhas*/
+    margin-top: 50px;
+}
