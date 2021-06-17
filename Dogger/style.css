@@ -1,0 +1,194 @@
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif;*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#intro{
+    background-color: #DB663E;
+    color: white;
+}
+
+
+#introH1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+    
+}
+.introContainer{
+    padding: 3% 15% 9%;
+}
+.colorW{
+    color: white;
+}
+/*section vantagens*/
+.vantagens{
+    position: relative;
+    background-color: #fff;
+    z-index: 1;
+}
+.img-dog{
+    width: 15%;
+    transform: rotate(20deg);
+    position: absolute;
+    right: 30%;
+}
+/*modifica com media query section intro e imagem cellphone dog*/
+@media (max-width: 1028px) {
+    #intro{
+        text-align: center;
+    }
+
+    .img-dog{
+        position: static;
+        transform: rotate(0);
+    }
+    
+}
+/* Navagation */
+.nav-item{
+    padding: 0 18px;
+}
+.nav-link{
+    font-size: 1.0rem;
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+.navbar-brand h1{
+    font-family:'Ubuntu', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.download-btn{
+ margin: 5% 3% 5% 0;
+}
+
+/*Fonte awesome*/
+
+.icon-card{
+   color: #DB663E;
+   padding-bottom: 5%;
+}
+.icon-card:hover{
+    color:#b6512f;
+}
+
+/*CARD*/
+h5{
+    font-family: 'Montserrat', sans-serif;
+}
+/*h1 h2 h3 h4*/
+#secttionFeature h2{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 3rem;
+    line-height: 1.5;
+}
+
+/*Sections*/
+#secttionFeature{
+    text-align: center;
+    background-color: #DB663E;
+    color: white;
+}
+.testimunial-img{
+    width: 10%;
+    border-radius: 100%;
+    margin:20px;
+}
+#press{
+    text-align: center;
+    padding: 3%;
+}
+.press-logo{
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+.pad{
+    padding: 7% 15% ;
+}
+
+.pad-prices{
+    padding: 2% 15% ;
+}
+
+
+/*Corrousel item*/
+.carousel-item{
+    padding: 7% 15%;
+}
+
+/*Card price*/
+
+.pad-prices h3{
+    font-family:'Montserrat', sans-serif;
+}
+.pad-prices p{
+    line-height: 1.5;
+    text-align: left;
+}
+.card h4{
+    font-family:'Montserrat', sans-serif;
+    line-height: 2;
+
+}
+.card p{
+    font-family:inherit;
+}
+
+#card-ouro{
+    border: 2px groove rgba(255, 217, 0, 0.89);
+}
+#card-prata{
+    border: 2px groove rgba(192, 192, 192, 0.897);
+}
+#card-free{
+    border: 2px groove rgba(0, 0, 0, 0.856);
+}
+.fa-check{
+    color: green ;
+    opacity: 60%;
+    display: inline-block;
+}
+
+.fa-times-circle{
+    color: red;
+    opacity: 60%;
+    display: inline-block;
+}
+
+.zoom:hover{
+    transform: scale(1.1);
+}
+
+.zoom{
+    margin-bottom: 2%;
+}
+/*Section footer*/
+#footer-section{
+    background-color: #DB663E;
+    color: #fff;
+}
+#footer-section h2{  
+    font-family:'Montserrat', sans-serif;
+    font-weight: 3rem;
+}
+/*footer*/
+footer i{
+    padding: 10px;
+}
+
+footer i:hover{
+    color: #DB663E;
+}
+
+/*Link cv*/
+#Cvlink{
+    padding: 2px;
+    text-decoration: underline;
+    color: gray;
+}
+#Cvlink:hover{
+    color: #db663d;
+}
