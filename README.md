@@ -5,6 +5,6 @@
 ##### Irei atualizar frequentemente com novos projetos 
 
 
-*By: Thiago José Lima Santos*
+[*By: Thiago José Lima Santos*](https://curriculo-thiago-santos-586aa.web.app/)
 
  
