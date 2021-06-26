@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <title>RocketQ - Perguntas e Respostas</title>
+        <!-- Comtabilidade -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!--View port-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Link folha de estilo-->
+        <link rel="stylesheet" href="/css/room.css">
+        <link rel="stylesheet" href="/css/globo.css">
+        <link rel="stylesheet" href="/css/modal.css">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+        
+        <!-- Script -->
+        <script src="/scripts/main.js" defer type="module"></script>
+    </head>
+    <body>
+        <div id="room" class="content">
+            <header>
+                <a href="/"><img src="/images/logo.svg" alt="Ask me Logo"/></a>
+
+                <div class="buttons">
+                    <div class="button outlined" id="room-id" data-id="<%= roomId %>">
+                        <span class="copy"></span>#<%= roomId  %></span>  
+                        <a href="#">
+                            <img src="/images/copy.svg" alt="Copiar número da sala"/>
+                        </a>
+                    </div>
+                    <a href="/create-pass" class="button">
+                        <img src="/images/users-white.svg" alt="Criar uma sala">
+                        Criar Sala
+                    </a>
+                </div>
+            </header>
+            <!-- fim do header -->
+            <main>
+                <div id="question-form">
+                    <h2>Faça sua pergunta</h2>
+                    <form action="/question/create/<%= roomId %> " method="POST">
+                        <label class="sr-only" for-id="question">O que deseja perguntar?</label>
+                        <textarea name="question" id="question" placeholder="Digite sua pergunta"></textarea>
+                       
+                        <footer>
+                            <div>
+                                <img src="/images/lock.svg" alt="Cadeado">
+                                Esta pergunta é anônima 
+                            </div>
+                            <button>Enviar</button>
+                        </footer>
+                    </form>
+                    <!-- Inicio perguntas  -->
+                    <section id="questions">
+                        <h2 class="sr-only">Perguntas da comunidade</h2>
+                        <div class="questions">
+
+                            <% if (!isNoQuestions){ %> 
+                                <%- include('parts/no-question') %> 
+                            <% } %> 
+
+                            <% questions.forEach(question => {  %>
+                                <!-- Question1 -->
+                                <div class="question-wrapper">
+                                    <div class="question-content">
+                                        <div class="user">
+                                            <img src="/images/user-white-alone.svg" alt="Avatar">
+                                        </div>
+                                        <div class="question">
+                                            <p><%= question.title   %> </p>
+                                        </div>
+                                    </div>
+                                    <div class="actions">
+                                        <a href="#" class="check" data-id="<%= question.id %>">
+                                            <img src="/images/lida.svg" alt="Check de mensagem lida">
+                                            Marcar como lida
+                                        </a>
+                                        <a href="#" class="delete" data-id="<%= question.id %>">
+                                            <img src="/images/excluir.svg" alt="Excluir">
+                                            Excluir
+                                        </a>
+                                    </div>
+                                </div>
+
+                            <% }) %> 
+                            <!-- Question read -->
+                        <% questionsRead.forEach(questionRead => {  %>
+                            <div class="question-wrapper read">
+                                <div class="question-content">
+                                    <div class="user">
+                                        <img src="/images/user-white-alone.svg" alt="Avatar">
+                                    </div>
+                                    <div class="question">
+                                        <p><%= questionRead.title  %> </p>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <a href="" class="delete" data-id="<%= questionRead.id %> ">
+                                        <img src="/images/excluir.svg" alt="Excluir">
+                                        Excluir
+                                    </a>
+                                </div>
+                            </div>
+                        <% }) %> 
+                            
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal-wrapper">
+            <div class="modal">
+                <h2>Excluir pergunta</h2>
+                <p>Tem certeza que você deseja excluir esta pergunta?</p>
+                <form action="#" method="POST">
+                    <label for-id="password" class="sr-only">Digire sua senha admin</label>
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha"/>
+
+                    <div class="buttons">
+                        <div class="button grey cancel">Cancelar</div>
+                        <button class="red">Sim, excluir</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </body>
+</html>
+
+<!-- 2h aula 4 -->
