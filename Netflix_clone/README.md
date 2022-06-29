@@ -1,4 +1,4 @@
-# Kenzieflix
+# Clone Netflix
 
 Projeto desenvolvido na parte 2 da maratona de programação da Kenzie Academy Brasil.
 
@@ -10,7 +10,6 @@ Projeto desenvolvido na parte 2 da maratona de programação da Kenzie Academy B
 
 ### Estrutura de arquivos
 
-- kenzieflix
     - README.md
     - index.html
     - /assets
@@ -117,7 +116,3 @@ Para evitar que isso estrague seu layout, adicione um estilo que combine com a c
 
 - [Imagem Desktop](./assets/img/desktop.png)
 - [Imagem Mobile](./assets/img/mobile.png)
-
-### Resultado final
-
-- [Kenzieflix](https://kenzie-academy-brasil.github.io/kenzieflix/)
